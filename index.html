@@ -149,7 +149,7 @@
             <!--===============================================================================================-->
             <script>
                 refresh_el();
-                setInterval(refresh_el(), 1000);
+                setInterval(refresh_el, 1000);
                 function refresh_el(){
                                     var minutes = 1000 * 60;
                                     var hours = minutes * 60;
@@ -207,6 +207,7 @@
                                     document.getElementById("hours-luca").innerHTML = diff_hluca;
                                     document.getElementById("minutes-luca").innerHTML = diff_mluca;
                                     document.getElementById("seconds-luca").innerHTML = diff_sluca;
+                                    console.log(diff_sluca);
                                 }
             </script>
             <!--===============================================================================================-->
