@@ -1,130 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>HBP Countdown</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
-</head>
-<body>
-	
-	<!--  -->
-	<div class="simpleslide100">
-		<div class="simpleslide100-item bg-img1" style="background-image: url('images/bg_n02.jpeg');"></div>
-		<!--
-      <div class="simpleslide100-item bg-img1" style="background-image: url('images/bg_brain.jpg');"></div>
-        -->
-		<div class="simpleslide100-item bg-img1" style="background-image: url('images/bg_n03.jpeg');"></div>
-	</div>
+    <head>
+        <title>HBP Countdown</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--===============================================================================================-->	
+        <link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="css/util.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <!--===============================================================================================-->
+    </head>
+    <body>
 
-	<div class="size1 overlay1">
-		<!--  -->
-		<div class="">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-			<h2 class="txt-center" style="color:white">
-				HUMAN BRAIN PROJECT
-			</h2>
-            <br>
-            <br>
-			<h1 class="txt-center" style="color:white; font-size:35pt">
-				The Final Countdown
-			</h1>
-            <br>
-            <br>
-			<p class="m2-txt1 txt-center p-b-48">
-			</p>
+        <!--  -->
+        <div class="simpleslide100">
+            <div class="simpleslide100-item bg-img1" style="background-image: url('images/bg_n02.jpeg');"></div>
+            <!--
+                <div class="simpleslide100-item bg-img1" style="background-image: url('images/bg_brain.jpg');"></div>
+            -->
+            <div class="simpleslide100-item bg-img1" style="background-image: url('images/bg_n03.jpeg');"></div>
+        </div>
 
-			<div class="flex-w flex-c-m cd100 p-b-33">
-				<div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
-					<span id="days" class="l2-txt1 p-b-9 days"></span>
-					<span class="s2-txt1">Days</span>
-				</div>
+        <div class="size1 overlay1">
+            <!--  -->
+            <div class="">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2 class="txt-center" style="color:white">
+                    HUMAN BRAIN PROJECT
+                </h2>
+                <br>
+                <br>
+                <h1 class="txt-center" style="color:white; font-size:35pt">
+                    The Final Countdown
+                </h1>
+                <br>
+                <br>
+                <p class="m2-txt1 txt-center p-b-48">
+                </p>
 
-				<div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
-					<span id="hours" class="l2-txt1 p-b-9 hours"></span>
-					<span class="s2-txt1">Hours</span>
-				</div>
+                <div class="flex-w flex-c-m cd100 p-b-33">
+                    <div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+                        <span id="days" class="l2-txt1 p-b-9 days"></span>
+                        <span class="s2-txt1">Days</span>
+                    </div>
 
-				<div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
-					<span id="minutes" class="l2-txt1 p-b-9 minutes"></span>
-					<span class="s2-txt1">Minutes</span>
-				</div>
+                    <div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+                        <span id="hours" class="l2-txt1 p-b-9 hours"></span>
+                        <span class="s2-txt1">Hours</span>
+                    </div>
 
-				<div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
-					<span id="seconds" class="l2-txt1 p-b-9 seconds"></span>
-					<span class="s2-txt1">Seconds</span>
-				</div>
-			</div>
-		</div>
-	</div>
+                    <div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+                        <span id="minutes" class="l2-txt1 p-b-9 minutes"></span>
+                        <span class="s2-txt1">Minutes</span>
+                    </div>
+
+                    <div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+                        <span id="seconds" class="l2-txt1 p-b-9 seconds"></span>
+                        <span class="s2-txt1">Seconds</span>
+                    </div>
+                </div>
+                <div>
+
+                    <!-- Time divs for Carmen -->
+                    <br>
+                    <br>
+                    <br>
+                    <div class="flex-w flex-c-m cd100 p-b-33">
+                        <h2>Time elapsed since Camen started in HBP</h2>
+                    </div>
+                    <div class="flex-w flex-c-m cd100 p-b-33">
+                        <div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+                            <span id="days-carmen" class="l2-txt1 p-b-9 days"></span>
+                            <span class="s2-txt1">Days</span>
+                        </div>
+
+                        <div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+                            <span id="hours-carmen" class="l2-txt1 p-b-9 hours"></span>
+                            <span class="s2-txt1">Hours</span>
+                        </div>
+
+                        <div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+                            <span id="minutes-carmen" class="l2-txt1 p-b-9 minutes"></span>
+                            <span class="s2-txt1">Minutes</span>
+                        </div>
+
+                        <div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+                            <span id="seconds-carmen" class="l2-txt1 p-b-9 seconds"></span>
+                            <span class="s2-txt1">Seconds</span>
+                        </div>
+                    </div>
+
+                    <!-- Time divs for Luca -->
+                    <br>
+                    <br>
+                    <br>
+                    <div class="flex-w flex-c-m cd100 p-b-33">
+                        <h2>Time elapsed since Luca started in HBP</h2>
+                    </div>
+                    <div class="flex-w flex-c-m cd100 p-b-33">
+                        <br>
+                        <div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+                            <span id="days-luca" class="l2-txt1 p-b-9 days"></span>
+                            <span class="s2-txt1">Days</span>
+                        </div>
+
+                        <div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+                            <span id="hours-luca" class="l2-txt1 p-b-9 hours"></span>
+                            <span class="s2-txt1">Hours</span>
+                        </div>
+
+                        <div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+                            <span id="minutes-luca" class="l2-txt1 p-b-9 minutes"></span>
+                            <span class="s2-txt1">Minutes</span>
+                        </div>
+
+                        <div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+                            <span id="seconds-luca" class="l2-txt1 p-b-9 seconds"></span>
+                            <span class="s2-txt1">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
 
-	
 
-<!--===============================================================================================-->	
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script>
-        refresh_el();
-    setInterval(refresh_el, 1000);
-        function refresh_el(){
-              var minutes = 1000 * 60;
-              var hours = minutes * 60;
-  var days = hours * 24;
-  var months = days * 30;
-  var years = days * 365;
-  var d = new Date();
-  var dd = new Date('6/19/2021');
-  var tt = d.getTime();
-  var t = dd - tt;
 
-  var y = Math.round(t / years);
-  var m = Math.round(t / months);
-  var d = Math.floor(t / days);
-  var h = Math.floor(t / hours);
-  var m = Math.floor(t / minutes);
-  var s = Math.floor(t / 1000);
-  var diff_h = Math.floor((t-(d*24*60*60*1000)) / (1000 * 60 * 60))
-  var diff_m = Math.floor((t-(h*60*60*1000)) / (1000 * 60))
-  var diff_s = Math.floor((t-(m*60*1000)) / (1000))
-  document.getElementById("days").innerHTML = d;
-  document.getElementById("hours").innerHTML = diff_h;
-  document.getElementById("minutes").innerHTML = diff_m;
-  document.getElementById("seconds").innerHTML = diff_s;
-        }
-	</script>
-<!--===============================================================================================-->
-	<script src="vendor/tilt/tilt.jquery.min.js"></script>
-	<script >
-		$('.js-tilt').tilt({
-			scale: 1.1
-		})
-	</script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
+            <!--===============================================================================================-->	
+            <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+            <!--===============================================================================================-->
+            <script src="vendor/bootstrap/js/popper.js"></script>
+            <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+            <!--===============================================================================================-->
+            <script src="vendor/select2/select2.min.js"></script>
+            <!--===============================================================================================-->
+            <script>
+                refresh_el();
+                setInterval(refresh_el(), 1000);
+                function refresh_el(){
+                                    var minutes = 1000 * 60;
+                                    var hours = minutes * 60;
+                                    var days = hours * 24;
+                                    var months = days * 30;
+                                    var years = days * 365;
+                                    var d = new Date();
+                                    var dd = new Date("3/31/2023");
+                                    var ddluca = new Date("7/1/2016");
+                                    var ddcarmen = new Date("7/9/2014");
+                                    var tt = d.getTime();
+                                    var t = dd - tt;
+                                    var tcarmen = tt - ddcarmen;
+                                    var tluca = tt - ddluca;
 
-</body>
+                                    var y = Math.round(t / years);
+                                    //
+                                    var m = Math.round(t / months);
+                                    var d =  Math.floor(t / days);
+                                    var h = Math.floor(t / hours);
+                                    var m = Math.floor(t / minutes);
+                                    var s = Math.floor(t / 1000);
+                                    var diff_h = Math.floor((t-(d*24*60*60*1000)) / (1000 * 60 * 60))
+                                    var diff_m = Math.floor((t-(h*60*60*1000)) / (1000 * 60))
+                                    var diff_s = Math.floor((t-(m*60*1000)) / (1000))
+                                    //
+                                    var mcarmen = Math.round(tcarmen / months);
+                                    var dcarmen =  Math.floor(tcarmen / days);
+                                    var hcarmen = Math.floor(tcarmen / hours);
+                                    var mcarmen = Math.floor(tcarmen / minutes);
+                                    var scarmen = Math.floor(tcarmen / 1000);
+                                    var diff_hcarmen = Math.floor((tcarmen-(dcarmen*24*60*60*1000)) / (1000 * 60 * 60))
+                                    var diff_mcarmen = Math.floor((tcarmen-(hcarmen*60*60*1000)) / (1000 * 60))
+                                    var diff_scarmen = Math.floor((tcarmen-(mcarmen*60*1000)) / (1000))
+                                    //
+                                    var mluca = Math.round(tluca / months);
+                                    var dluca =  Math.floor(tluca / days);
+                                    var hluca = Math.floor(tluca / hours);
+                                    var mluca = Math.floor(tluca / minutes);
+                                    var sluca = Math.floor(tluca / 1000);
+                                    var diff_hluca = Math.floor((tluca-(dluca*24*60*60*1000)) / (1000 * 60 * 60))
+                                    var diff_mluca = Math.floor((tluca-(hluca*60*60*1000)) / (1000 * 60))
+                                    var diff_sluca = Math.floor((tluca-(mluca*60*1000)) / (1000))
+                                    document.getElementById("days").innerHTML = -1 * d;
+                                    document.getElementById("hours").innerHTML = diff_h;
+                                    document.getElementById("minutes").innerHTML = diff_m;
+                                    document.getElementById("seconds").innerHTML = diff_s;
+                                    //
+                                    document.getElementById("days-carmen").innerHTML = dcarmen;
+                                    document.getElementById("hours-carmen").innerHTML = diff_hcarmen;
+                                    document.getElementById("minutes-carmen").innerHTML = diff_mcarmen;
+                                    document.getElementById("seconds-carmen").innerHTML = diff_scarmen;
+                                    //
+                                    document.getElementById("days-luca").innerHTML = dluca;
+                                    document.getElementById("hours-luca").innerHTML = diff_hluca;
+                                    document.getElementById("minutes-luca").innerHTML = diff_mluca;
+                                    document.getElementById("seconds-luca").innerHTML = diff_sluca;
+                                }
+            </script>
+            <!--===============================================================================================-->
+            <script src="vendor/tilt/tilt.jquery.min.js"></script>
+            <script >
+                $('.js-tilt').tilt({
+            scale: 1.1
+        })
+            </script>
+            <!--===============================================================================================-->
+            <script src="js/main.js"></script>
+
+    </body>
 </html>
