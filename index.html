@@ -104,6 +104,36 @@
                         </div>
                     </div>
 
+
+                    <!-- Time divs for Rosanna -->
+                    <br>
+                    <br>
+                    <br>
+                    <div class="flex-w flex-c-m cd100 p-b-33">
+                        <h2 style="color:white">Time elapsed since Rosanna started in HBP</h2>
+                    </div>
+                    <div class="flex-w flex-c-m cd100 p-b-33">
+                        <div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+                            <span id="days-rosanna" class="l2-txt1 p-b-9 days"></span>
+                            <span class="s2-txt1">Days</span>
+                        </div>
+
+                        <div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+                            <span id="hours-rosanna" class="l2-txt1 p-b-9 hours"></span>
+                            <span class="s2-txt1">Hours</span>
+                        </div>
+
+                        <div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+                            <span id="minutes-rosanna" class="l2-txt1 p-b-9 minutes"></span>
+                            <span class="s2-txt1">Minutes</span>
+                        </div>
+
+                        <div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+                            <span id="seconds-rosanna" class="l2-txt1 p-b-9 seconds"></span>
+                            <span class="s2-txt1">Seconds</span>
+                        </div>
+                    </div>
+
                     <!-- Time divs for Luca -->
                     <br>
                     <br>
@@ -161,10 +191,12 @@
                                     var dd = new Date("9/30/2023");
                                     var ddluca = new Date("7/1/2016");
                                     var ddcarmen = new Date("7/9/2014");
+                                    var ddrosanna = new Date("1/4/2013");
                                     var tt = d.getTime();
                                     var t = dd - tt;
                                     var tcarmen = tt - ddcarmen;
                                     var tluca = tt - ddluca;
+                                    var trosanna = tt - ddrosanna;
 
                                     var y = Math.round(t / years);
                                     //
@@ -186,6 +218,15 @@
                                     var diff_mcarmen = Math.floor((tcarmen-(hcarmen*60*60*1000)) / (1000 * 60))
                                     var diff_scarmen = Math.floor((tcarmen-(mcarmen*60*1000)) / (1000))
                                     //
+                                    var mrosanna = Math.round(trosanna / months);
+                                    var drosanna =  Math.floor(trosanna / days);
+                                    var hrosanna = Math.floor(trosanna / hours);
+                                    var mrosanna = Math.floor(trosanna / minutes);
+                                    var srosanna = Math.floor(trosanna / 1000);
+                                    var diff_hrosanna = Math.floor((trosanna-(dcarmen*24*60*60*1000)) / (1000 * 60 * 60))
+                                    var diff_mrosanna = Math.floor((trosanna-(hcarmen*60*60*1000)) / (1000 * 60))
+                                    var diff_srosanna = Math.floor((trosanna-(mcarmen*60*1000)) / (1000))
+                                    //
                                     var mluca = Math.round(tluca / months);
                                     var dluca =  Math.floor(tluca / days);
                                     var hluca = Math.floor(tluca / hours);
@@ -203,6 +244,11 @@
                                     document.getElementById("hours-carmen").innerHTML = diff_hcarmen;
                                     document.getElementById("minutes-carmen").innerHTML = diff_mcarmen;
                                     document.getElementById("seconds-carmen").innerHTML = diff_scarmen;
+                                    //
+                                    document.getElementById("days-rosanna").innerHTML = drosanna;
+                                    document.getElementById("hours-rosanna").innerHTML = diff_hrosanna;
+                                    document.getElementById("minutes-rosanna").innerHTML = diff_mrosanna;
+                                    document.getElementById("seconds-rosanna").innerHTML = diff_srosanna;
                                     //
                                     document.getElementById("days-luca").innerHTML = dluca;
                                     document.getElementById("hours-luca").innerHTML = diff_hluca;
